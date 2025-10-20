@@ -12,18 +12,6 @@ Ein lokales RAG (Retrieval-Augmented Generation) System für die Studiendokument
 - **Automatisches Web Scraping**: Download von Universitätsdokumenten
 - **Modulare Architektur**: Erweiterbar und wartbar
 
-##  Voraussetzungen
-
-### Hardware
-- **RAM**: Mindestens 8GB (16GB empfohlen für größere Modelle)
-- **Festplatte**: 20GB freier Speicherplatz
-- **CPU**: Moderne CPU (Apple Silicon bevorzugt für Performance)
-
-### Software
-- **Python**: 3.8 oder höher
-- **Ollama**: Installiert und läuft
-- **Git**: Für Repository-Kloning
-
 ##  Installation
 
 ### Schritt 1: Repository klonen
@@ -82,7 +70,7 @@ ollama pull llama3.1:3b
 python main.py setup
 ```
 
-## 🚀 Verwendung
+## Verwendung
 
 ### 1. Dokumente hinzufügen
 
@@ -140,56 +128,6 @@ documents:
     chunk_overlap: 50
 ```
 
-## 📁 Projektstruktur
-
-```
-university-leipzig-rag/
-├── main.py                 # Hauptprogramm mit CLI
-├── config.py              # Konfigurationsmanagement
-├── config.yaml            # Konfigurationsdatei
-├── requirements.txt       # Python-Dependencies
-├── streamlit_ui.py        # Chat-Benutzeroberfläche
-├── rag_engine.py          # RAG-Engine mit Ollama
-├── document_processor.py  # PDF-Verarbeitung und Vektorisierung
-├── web_scraper.py         # Web Scraping für Uni-Dokumente
-├── logging_config.py      # Logging-Konfiguration
-├── data/
-│   ├── pdfs/             # PDF-Dateien (input)
-│   └── chroma_db/        # Vektor-Datenbank (generiert)
-└── logs/
-    └── rag_system.log    # System-Logs
-```
-
-## Fehlerbehebung
-
-### Ollama-Verbindungsprobleme
-```bash
-# Ollama-Status prüfen
-ollama list
-
-# Ollama neu starten
-killall ollama
-ollama serve
-```
-
-### spaCy-Modell-Probleme
-```bash
-# Modell erneut herunterladen
-python -m spacy download de_core_news_lg --force
-```
-
-### ChromaDB-Probleme
-```bash
-# Datenbank zurücksetzen (Vorsicht: löscht alle Daten!)
-python -c "import shutil; shutil.rmtree('data/chroma_db', ignore_errors=True)"
-python main.py process  # Dokumente erneut verarbeiten
-```
-
-### Streamlit-Port-Konflikte
-```bash
-# Anderen Port verwenden
-streamlit run streamlit_ui.py --server.port 8502
-```
 
 ## Verwendungsbeispiele
 
@@ -216,7 +154,6 @@ python main.py start
 python web_scraper.py --max-depth 4 --output-dir data/new_pdfs
 ```
 
-## 🧪 Entwicklung und Testing
 
 ### Tests ausführen
 ```bash
@@ -239,18 +176,5 @@ python main.py test
 - **Chunk-Größe anpassen**: Größere Chunks in `config.yaml` für weniger, aber längere Kontexte
 - **GPU-Beschleunigung**: Ollama unterstützt GPU-Beschleunigung automatisch wenn verfügbar
 
-## 🐛 Bekannte Probleme
 
-1. **Große PDF-Dateien**: Verarbeitung sehr großer PDFs kann langsam sein
-2. **Ollama-Startup**: Erste Anfrage an Ollama kann lange dauern (Model Loading)
-3. **Memory Usage**: Große Modelle benötigen viel RAM
-
-## 📄 Lizenz
-
-MIT License -
-
-
-
----
-
-**Entwickelt für Studierende der Universität Leipzig** 🎓
+**Entwickelt für Studierende der Universität Leipzig** 
