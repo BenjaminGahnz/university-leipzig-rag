@@ -1,0 +1,8 @@
+Probleme: 
+
+Missmatch zwischen angezeigten Quellen und von llm benutzten Quellen
+
+Antwort ist zt in Englisch 
+
+
+

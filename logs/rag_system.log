@@ -1,0 +1,26 @@
+2025-10-19 21:44:51 - rag_engine - INFO - Loaded spaCy model: de_core_news_lg
+2025-10-19 21:44:52 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-10-19 21:44:52 - rag_engine - INFO - Connected to ChromaDB at: data/chroma_db
+2025-10-19 21:44:52 - rag_engine - INFO - Connected to collection 'university_regulations' with 27848 documents
+2025-10-19 21:44:52 - rag_engine - ERROR - Ollama check failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x124933ac0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-10-19 21:46:58 - __main__ - INFO - RAG System started with command: start
+2025-10-19 21:47:00 - rag_engine - INFO - Loaded spaCy model: de_core_news_lg
+2025-10-19 21:47:00 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2025-10-19 21:47:00 - rag_engine - INFO - Connected to ChromaDB at: data/chroma_db
+2025-10-19 21:47:00 - rag_engine - INFO - Connected to collection 'university_regulations' with 27848 documents
+2025-10-19 21:47:14 - rag_engine - INFO - Processing query: Welche Masterstudiengänge bietet die Universität Leipzig
+2025-10-19 21:47:14 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2025-10-19 21:51:12 - rag_engine - INFO - Processing query: Welche Module sollte ich im 1. Semester für den Bachelor Wirtschaftsinformatik belegen ?
+2025-10-19 21:52:12 - rag_engine - ERROR - Ollama request timed out
+2025-10-19 21:53:04 - rag_engine - INFO - Processing query: Im Bachelor Wirtschaftsinformatik, welche Module werden fürs 1. Semester empfohlen ?
+2025-10-19 21:54:08 - rag_engine - INFO - Processing query: Und im Bachelor Wirtschaftswissenschaften ?
+2025-10-19 21:55:54 - rag_engine - INFO - Processing query: Wieviele Creditspoints bekomme ich für das Modul Mathematik für Wirtschaftswissenschaften II
+2025-10-19 21:57:53 - rag_engine - INFO - Processing query: Welchen Master würdest du empfehlen, wenn ich gerne Kunst mache
+2025-10-19 21:58:53 - rag_engine - ERROR - Ollama request timed out
+2025-10-19 21:59:30 - rag_engine - INFO - Processing query: Ich studiere Wirtschaftspädagogik. Welche Module soll ich im 2. Semester belegen und wieviel Creditpoints bringen sie mir ein ?
+2025-10-19 22:02:21 - rag_engine - INFO - Processing query: Ich Studiere Wirtschaftswissenschaften. Was mache ich im Krankheitsfall am Tag der Klausur?
+2025-10-19 22:06:45 - rag_engine - INFO - Processing query: Zu welchem Semester kann das Studium Veterinärmedizin an der Universität Leipzig begonnen werden ?
+2025-10-19 22:08:35 - rag_engine - INFO - Processing query: Wie hoch ist die Regelstudienzeit für das Studium der Veterinärmedizin
+2025-10-19 22:08:58 - rag_engine - INFO - Processing query: Wie hoch ist die Regelstudienzeit für das Studium der Tiermedizin ?
+2025-10-19 22:09:58 - rag_engine - ERROR - Ollama request timed out
+2025-10-19 22:11:46 - rag_engine - INFO - Processing query: Ich studiere Bachelor Wirtschaftswissenschaften, wie lange muss ich in der Regel studieren ?

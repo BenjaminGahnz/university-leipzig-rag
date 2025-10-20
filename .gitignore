@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+*.env
+
+# IDE / Editor
+.idea/
+.vscode/
+
+# Data & Logs
+data/chroma_db/
+data/chroma_db/
+data/chroma_db/chroma.sqlite3
+*.pdf
+data/chroma_db/chroma.sqlite3
+
+# Dependencies
+*.egg-info/

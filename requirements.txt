@@ -1,0 +1,25 @@
+# Core Dependencies
+langchain
+langchain-community
+langchain-ollama
+langchain-text-splitters
+chromadb==0.4.24
+pypdf==4.2.0
+spacy==3.7.4
+streamlit==1.32.0
+python-dotenv==1.0.1
+pyyaml==6.0.1
+
+# Web Scraping
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# Utilities
+tqdm==4.66.2
+colorlog==6.8.2
+pathlib==1.0.1
+
+# Development
+pytest==8.1.1
+black==24.3.0
+flake8==7.0.0
