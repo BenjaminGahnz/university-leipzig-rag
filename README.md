@@ -105,7 +105,7 @@ python main.py start
 ```
 Öffnet die Streamlit-Oberfläche unter `http://localhost:8501`
 
-## ⚙️ Konfiguration
+## Konfiguration
 
 Die Konfiguration erfolgt über `config.yaml`:
 
@@ -164,12 +164,6 @@ python main.py test
 python -c "from rag_engine import create_rag_engine; engine = create_rag_engine(); print(engine.check_system_status())"
 ```
 
-### Logging konfigurieren
-```bash
-# Debug-Level aktivieren
-export LOG_LEVEL=DEBUG
-python main.py test
-```
 
 ### Performance-Optimierung
 - **Kleinere Modelle**: Verwenden Sie `llama3.1:3b` für weniger RAM-Verbrauch
