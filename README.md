@@ -5,11 +5,11 @@ Ein lokales RAG (Retrieval-Augmented Generation) System für die Studiendokument
 ## Features
 
 - **Lokale Ausführung**: Vollständig lokal mit Ollama LLMs
-- **Deutsche Sprachunterstützung**: Optimiert für deutsche Universitätsdokumente  
+- **Deutsche Sprachunterstützung**:
 - **Intelligente Dokumentenverarbeitung**: Automatische PDF-Verarbeitung und Chunking
 - **Web-basierte Chat-Oberfläche**: Moderne Streamlit-UI
 - **Quellenangaben**: Transparente Nachverfolgung der Antwortquellen
-- **Automatisches Web Scraping**: Download von Universitätsdokumenten
+- **Automatisches Web Scraping**: Download von Universitätsdokumenten der Uni Leipzig
 - **Modulare Architektur**: Erweiterbar und wartbar
 
 ##  Installation
@@ -24,8 +24,6 @@ cd university-leipzig-rag
 ```bash
 python -m venv venv
 
-# Windows
-venv\Scripts\activate
 
 # macOS/Linux  
 source venv/bin/activate
@@ -48,10 +46,6 @@ python -m spacy download de_core_news_lg
 # macOS
 brew install ollama
 
-# Linux
-curl -fsSL https://ollama.com/install.sh | sh
-
-# Windows: Download von https://ollama.com
 ```
 
 #### Ollama Modell herunterladen:
