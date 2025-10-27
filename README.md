@@ -24,8 +24,6 @@ cd university-leipzig-rag
 ```bash
 python -m venv venv
 
-
-# macOS/Linux  
 source venv/bin/activate
 ```
 
